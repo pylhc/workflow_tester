@@ -11,4 +11,4 @@ jobs:
   call-test-workflow:
     uses: pylhc/.github/.github/workflows/test_workflow.yml@reusable_workflows
     with:
-      config-path: .github/labeler.yml
+      test-input: Hello World
