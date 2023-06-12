@@ -1,0 +1,14 @@
+name: MyTest 
+
+defaults:
+  run:
+    shell: bash
+
+on:  # Runs on all push events 
+  push:
+
+jobs:
+  call-test-workflow:
+    uses: pylhc/.github/.github/workflows/test_workflow.yml@reusable_workflows
+    with:
+      config-path: .github/labeler.yml
